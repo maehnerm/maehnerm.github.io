@@ -1,14 +1,8 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 html {
-    color: #222;
     font-size: 1em;
     line-height: 1.4;
-}
-
-body{
-  background-color: #eee;
-  transition: background-color 1s ease;
 }
 
 ::-moz-selection {
