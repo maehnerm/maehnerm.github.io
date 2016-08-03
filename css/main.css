@@ -55,8 +55,74 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*base rules */
+
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: #555;
+  background-color: #eee;
+}
+
+h1, .h1, h2, .h2{
+  line-height: 1.2;
+  letter-spacing: 0.1;
+  margin-top: 1em;
+  padding-top: 1em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1{
+  color: #fff;
+  font-size: 3em;
+}
+
+h2,
+strong {
+  color: #333;
+}
 
 
+section{
+  border-left: #aaaa00;
+}
+
+a {
+  color: #008b8b; /*Primary color darkcyan*/
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+a:hover{
+  color: #00aaaa; /*Primary color lighter*/
+}
+
+/*layout rules*/
+
+.container{
+  margin: 0 auto;
+  max-width: 50em;
+}
+
+/*module rules*/
+
+.fullwidth-teaser{
+  width: 100%;
+  height: 50vh;
+  background: url(https://hd.unsplash.com/photo-1451188214936-ec16af5ca155);
+  background-repeat: no-repeat;
+  background-position: left top;
+  box-shadow: inset 300px 300px 300px rgba(0,0,0,0.5);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 4em 0;
+}
+
+.fullwidth-teaser byline{
+  font-size: 1.5em;
+}
 
 
 

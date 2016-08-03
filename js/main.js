@@ -1,12 +1,17 @@
 $(document).ready(function(){
-  $('.switchbg-color').click(function(){
-    var color = $(this).text();
-    if(color == "#add8e6"){
-      $(this).text('#eeeeee');
-      $('body').css('background-color','#add8e6');
-    }else{
-      $(this).text('#add8e6');
-      $('body').css('background-color','#eeeeee');
-    }
+
+  //PARALAX
+  var $window = $(window);
+
+  $('div[data-type="background"]').each(function(){
+    var $bgobj = $(this);
+    $(window).scroll(function() {
+      var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+      var coords = '50% '+ yPos + 'px';
+      $bgobj.css({
+        backgroundPosition: coords
+      });
+    });
   });
-});
+
+});/*END SCRIPT*/
