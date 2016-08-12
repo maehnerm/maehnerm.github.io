@@ -1,14 +1,19 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 @import url("menu.css");
+
 @import url("../fonts/icons/css/fontello.css");
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300,100);
+
 html {
   font-size: 1em;
-  line-height: 1.4; }
+  line-height: 1.4;
+}
 
 ::-moz-selection, ::selection {
   background: #b3d4fc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 hr {
   display: block;
@@ -16,29 +21,36 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
 audio, canvas, iframe, img, svg, video {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 fieldset {
   border: 0;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 textarea {
-  resize: vertical; }
+  resize: vertical;
+}
 
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0; }
+  padding: 0.2em 0;
+}
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 /*base rules */
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -50,58 +62,71 @@ body {
   opacity: 0;
   transition: opacity 2s;
   -webkit-transition: opacity 2s;
-  /* Safari */ }
+  /* Safari */
+}
 
 h1, .h1, h2, .h2, h3, .h3 {
   line-height: 1.2;
   letter-spacing: 0.1;
   margin-top: 1em;
   padding-top: 1em;
-  font-weight: lighter; }
+  font-weight: lighter;
+}
 
 h1 {
   color: #fff;
-  font-size: 3em; }
+  font-size: 3em;
+}
 
 h2, strong {
-  color: #333; }
+  color: #333;
+}
 
 section {
-  border-left: #aaaa00; }
+  border-left: #aaaa00;
+}
 
 a {
   color: #008b8b;
   /*Primary color darkcyan*/
   text-decoration: none;
-  transition: all 0.5s ease; }
-  a:hover {
+  transition: all 0.5s ease;
+  &:hover {
     color: #00aaaa;
-    /*Primary color lighter*/ }
+    /*Primary color lighter*/
+  }
+}
 
 /*layout rules*/
+
 .container {
   margin: 0 auto;
-  max-width: 60em; }
+  max-width: 60em;
+}
 
 /*module rules*/
+
 .fullwidth-teaser {
   width: 100%;
   height: 100%;
   min-height: 500px;
-  background: url("../img/teaser-image.jpeg");
+  background: url('../img/teaser-image.jpeg');
   background-repeat: no-repeat;
   background-position: left top;
   /*background-attachment: fixed;*/
-  box-shadow: inset 0 0 150px black;
+  box-shadow: inset 0 0 150px rgba(0, 0, 0, 1);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   color: #fff;
-  padding: 4em 0; }
-  .fullwidth-teaser .byline {
-    font-size: 1.5em; }
-
+  padding: 4em 0;
+  .byline {
+    font-size: 1.5em;
+  }
+}
 /*carousel custom rules*/
+
 .carousel .carousel-control {
-  background-image: none; }
+  background-image: none;
+}
 
 .custom-caption {
   opacity: 0;
@@ -113,21 +138,30 @@ a {
   background-color: rgba(0, 0, 0, 0.44);
   color: white;
   height: 70%;
-  transition: all 1s ease; }
+  transition: all 1s ease;
+}
 
 .carousel:hover .custom-caption {
   opacity: 1;
-  left: 5em; }
+  left: 5em;
+}
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+
+@media only screen and (min-width: 35em) {}
+
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 .hidden {
   display: none !important;
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 .visuallyhidden {
   border: 0;
@@ -137,75 +171,89 @@ a {
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px; }
-  .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto; }
+  width: 1px;
+  &.focusable {
+    &:active, &:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+    }
+  }
+}
 
 .invisible {
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 .clearfix {
-  *zoom: 1; }
-  .clearfix:before {
-    content: " ";
-    display: table; }
-  .clearfix:after {
+  &:before {
     content: " ";
     display: table;
-    clear: both; }
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  *zoom: 1;
+}
 
 /* ==========================================================================
    Print styles
    ========================================================================== */
+
 @media print {
   * {
     background: transparent !important;
     color: #000 !important;
     box-shadow: none !important;
-    text-shadow: none !important; }
-    *:before, *:after {
+    text-shadow: none !important;
+    &:before, &:after {
       background: transparent !important;
       color: #000 !important;
       box-shadow: none !important;
-      text-shadow: none !important; }
-
+      text-shadow: none !important;
+    }
+  }
   a {
-    text-decoration: underline; }
-    a:visited {
-      text-decoration: underline; }
-    a[href]:after {
-      content: " (" attr(href) ")"; }
-
+    text-decoration: underline;
+    &:visited {
+      text-decoration: underline;
+    }
+    &[href]:after {
+      content: " (" attr(href) ")";
+    }
+  }
   abbr[title]:after {
-    content: " (" attr(title) ")"; }
-
-  a[href^="#"]:after, a[href^="javascript:"]:after {
-    content: ""; }
-
+    content: " (" attr(title) ")";
+  }
+  a {
+    &[href^="#"]:after, &[href^="javascript:"]:after {
+      content: "";
+    }
+  }
   pre, blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid; }
-
+    page-break-inside: avoid;
+  }
   thead {
-    display: table-header-group; }
-
+    display: table-header-group;
+  }
   tr {
-    page-break-inside: avoid; }
-
+    page-break-inside: avoid;
+  }
   img {
     page-break-inside: avoid;
-    max-width: 100% !important; }
-
+    max-width: 100% !important;
+  }
   p, h2, h3 {
     orphans: 3;
-    widows: 3; }
-
+    widows: 3;
+  }
   h2, h3 {
-    page-break-after: avoid; } }
-
-/*# sourceMappingURL=main.css.map */
+    page-break-after: avoid;
+  }
+}
