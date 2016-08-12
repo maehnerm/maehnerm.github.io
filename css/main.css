@@ -108,7 +108,7 @@ a:hover{
 
 .container{
   margin: 0 auto;
-  max-width: 50em;
+  max-width: 60em;
 }
 
 /*module rules*/
@@ -130,7 +130,11 @@ a:hover{
   font-size: 1.5em;
 }
 
+/*carousel custom rules*/
 
+.carousel .carousel-control{
+  background-image: none;
+}
 
 
 
