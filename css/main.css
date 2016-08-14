@@ -30,7 +30,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
+    margin: 1.6em 0;
     padding: 0;
 }
 
@@ -64,9 +64,26 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+h1{
+  font-size: 11vw;
+  margin: 0;
+}
 
 h2, .h2, h3, .h3{
   margin: 1.6em 0 1em 0;
+}
+
+header{
+      margin-bottom: 6em;
+}
+
+.blink {
+  opacity: 1;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
 }
 
 .container{
@@ -82,10 +99,6 @@ xmp{
 
 span.switchbg-color{
  cursor: pointer;
-}
-
-h1 xmp{
-  color: lightgreen;
 }
 
 footer{
@@ -130,7 +143,7 @@ a.call:hover {
 @media (min-width: 600px) {
 
  .container{
-   margin-top: calc(50vh - 300px);
+   /*margin-top: calc(50vh - 300px);*/
  }
 
 }
