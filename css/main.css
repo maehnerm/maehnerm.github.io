@@ -1,4 +1,7 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+*{
+  box-sizing: border-box;
+}
 
 html {
     color: #222;
@@ -62,11 +65,56 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+h2, .h2, h3, .h3{
+  margin: 1.6em 0 1em 0;
+}
 
+.container{
+  width: 100%;
+  max-width:900px;
+  margin: 0 auto;
+  padding: 3em;
+  margin-top: calc(50vh - 300px);
+}
 
+xmp{
+ display: inline;
+}
 
+span.switchbg-color{
+ cursor: pointer;
+}
 
+h1 xmp{
+  color: lightgreen;
+}
 
+footer{
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  margin-right: 3em;
+}
+
+footer .copyright{
+  position: relative;
+  float: right;
+  margin: 1em;
+  -webkit-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transform: rotate(-90deg) translate(100%);
+  -ms-transform: rotate(-90deg) translate(100%);
+  transform: rotate(-90deg) translate(100%);
+}
+
+a.mail:hover{
+  cursor: url(../email.png), auto;
+}
+
+a.call:hover {
+  cursor: url(../call.png), auto;
+}
 
 
 
@@ -138,15 +186,6 @@ textarea {
 .clearfix {
     *zoom: 1;
 }
-
-xmp{
-  display: inline;
-}
-
-span.switchbg-color{
-  cursor: pointer;
-}
-
 
 /* ==========================================================================
    Print styles
