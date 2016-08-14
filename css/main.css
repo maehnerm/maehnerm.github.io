@@ -65,7 +65,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 h1{
-  font-size: 11vw;
+  font-size: 9vw;
   margin: 0;
 }
 
@@ -140,10 +140,13 @@ a.call:hover {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-@media (min-width: 600px) {
+@media (min-width: 900px) {
 
  .container{
    /*margin-top: calc(50vh - 300px);*/
+ }
+ h1{
+   font-size: 96px;
  }
 
 }
