@@ -3,16 +3,11 @@
   box-sizing: border-box;
 }
 
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-    font-family: monospace;
-}
-
-body{
-  background-color: #eee;
-  transition: background-color 1s ease;
+html, body{
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: monospace;
 }
 
 ::-moz-selection {
@@ -67,7 +62,10 @@ textarea {
 h1{
   font-size: 9vw;
   margin: 0;
+  margin-left: -3px;
+  letter-spacing: 0.02em;
   line-height: 1em;
+  font-family: helvetica, sans-serif;
 }
 
 h2, .h2, h3, .h3{
@@ -130,6 +128,11 @@ a.call:hover {
   cursor: url(../call.png), auto;
 }
 
+.portfolio h3{
+  border-bottom: 1px solid #333;
+  padding-bottom: 1em;
+}
+
 
 
 
@@ -147,7 +150,7 @@ a.call:hover {
    /*margin-top: calc(50vh - 300px);*/
  }
  h1{
-   font-size: 96px;
+   font-size: 69px;
  }
 
 }
