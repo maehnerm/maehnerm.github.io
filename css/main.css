@@ -1,13 +1,19 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+@import 'https://fonts.googleapis.com/css?family=Inconsolata:400,700';
+
 *{
   box-sizing: border-box;
 }
 
 html, body{
-  color: #222;
-  font-size: 1em;
+  color: #333;
+  background: #eae9e5;
   line-height: 1.4;
-  font-family: monospace;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body{
+  margin-bottom: 7.2em;
 }
 
 ::-moz-selection {
@@ -25,7 +31,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1.6em 0;
+    margin: 4.2em 0 1.6em 0;
     padding: 0;
 }
 
@@ -59,23 +65,164 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* ===Base=== */
+
 h1{
   font-size: 9vw;
   margin: 0;
+  color: #000;
   margin-left: -3px;
   letter-spacing: 0.02em;
   line-height: 1em;
-  font-family: helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h2, .h2, h3, .h3{
   margin: 1.6em 0 1em 0;
+  font-size: 1.231em;
+  font-weight: bold;
+  font-family: 'Inconsolata', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+p{
+  margin-bottom: .6em;
 }
 
 header{
-      margin-bottom: 3em;
+  margin-bottom: 3em;
 }
 
+/*ul li{
+  display: inline-block;
+}
+
+ul li:after{
+  content: ' -';
+  margin:2em;
+}
+
+ul li:last-child:after{
+  content: "";
+  margin-right:0;
+}*/
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  margin-right: 3em;
+  padding-bottom: 4.2em;
+}
+
+small{
+  letter-spacing: 0.1em;
+}
+
+/* ===Layout=== */
+.container{
+  width: 100%;
+  max-width:900px;
+  padding: 0 3em;
+}
+
+.container-fluid{
+  padding: 3em;
+}
+
+.intro{
+  margin-top: 0;
+  height: 100vh;
+  display: table;
+}
+
+.vcenter {
+  display: table-cell;
+  width: inherit;
+  vertical-align: middle;
+  float: none;
+}
+
+.header-content{
+  display: relative;
+}
+
+
+/* ===Module=== */
+
+.inner-card h2{
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.2em;
+}
+
+
+.button-wrapper{
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  left: auto;
+  right: auto;
+  bottom: 5.6em;
+}
+
+a.call-to-action{
+  display:block;
+  position: relative;
+  width: 3em;
+  height: 3em;
+  margin: 0 auto;
+  padding: 0.75em 0.95em;
+  background: transparent;
+  border: 1px solid #888;
+  border-radius: 50%;
+  transition: border-color 0.5s ease;
+}
+
+a.call-to-action:hover{
+  border-color: #333;
+  cursor: pointer;
+}
+
+a.call-to-action .arrow-down{
+  position: relative;
+  content: "";
+  display: inline-block;
+  margin: 0 auto;
+  width: 1em;
+  height: 1em;
+  border-right: 1px solid;
+  border-top: 1px solid;
+  border-color: inherit;
+  transform: rotate(135deg);
+  -webkit-animation: jumping 5s infinite;
+  animation: jumping 4s infinite;
+}
+
+@-webkit-keyframes jumping {
+  0% {top:0px;}
+  80% {top:0px}
+  85% {top:5px;}
+  90% {top:0px;}
+  95% {top:5px;}
+  100% {top:0px;}
+}
+
+@keyframes jumping {
+  0% {top:0px;}
+  80% {top:0px}
+  85% {top:5px;}
+  90% {top:0px;}
+  95% {top:5px;}
+  100% {top:0px;}
+}
+
+.tag::before{
+  content: " — ";
+}
+
+/* ===State=== */
 .blink {
   opacity: 1;
   animation: blink 0.8s infinite;
@@ -85,29 +232,16 @@ header{
   50% { opacity: 0; }
 }
 
-.container{
-  width: 100%;
-  max-width:900px;
-  margin: 0 auto;
-  padding: 3em;
+a.mail:hover{
+  cursor: url(../email.png), auto;
 }
 
-xmp{
- display: inline;
+a.call:hover {
+  cursor: url(../call.png), auto;
 }
 
-span.switchbg-color{
- cursor: pointer;
-}
-
-footer{
-  position: absolute;
-  bottom: 0;
-  width:100%;
-  margin-right: 3em;
-}
-
-footer .copyright{
+/* ===Theme=== */
+.copyright{
   position: fixed;
   bottom: 0;
   right: 0;
@@ -119,27 +253,6 @@ footer .copyright{
   -ms-transform: rotate(-90deg) translate(100%);
   transform: rotate(-90deg) translate(100%);
 }
-
-a.mail:hover{
-  cursor: url(../email.png), auto;
-}
-
-a.call:hover {
-  cursor: url(../call.png), auto;
-}
-
-.portfolio h3{
-  border-bottom: 1px solid #333;
-  padding-bottom: 1em;
-}
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Media Queries
@@ -213,6 +326,10 @@ a.call:hover {
 
 .clearfix {
     *zoom: 1;
+}
+
+hr.distancer{
+  marging: 0;
 }
 
 /* ==========================================================================
