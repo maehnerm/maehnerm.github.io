@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Page Not Found</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
 
@@ -34,7 +35,10 @@
 
         p {
             margin: 0 auto;
-            width: 280px;
+        }
+
+        #url{
+          font-weight: bold;
         }
 
         @media only screen and (max-width: 280px) {
@@ -53,8 +57,32 @@
     </style>
 </head>
 <body>
-    <h1>Page Not Found</h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
+  <main class="container">
+    <h1>Page not found</h1>
+    <hr>
+    <p>Sorry, but it seems like this page not to exist:</p>
+    <br>
+    <p id="url"></p>
+    <br>
+    <p><a href="/">< Back to homepage</a></p>
+    <footer>
+      <p class="copyright"><small>&copy;2016 Marcus Mähner</small></p>
+    </footer>
+  </main>
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    jQuery(document).ready(function($){
+      var pathname = window.location.href;
+      $('#url').text(pathname);
+    });
+
+  </script>
 </body>
 </html>
 <!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->

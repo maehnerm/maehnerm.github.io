@@ -243,6 +243,7 @@ a.call:hover {
 /* ===Theme=== */
 .copyright{
   position: fixed;
+  max-width: 11em;
   bottom: 0;
   right: 0;
   margin: 1em;
