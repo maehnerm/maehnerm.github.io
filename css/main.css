@@ -1,5 +1,5 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-@import 'https://fonts.googleapis.com/css?family=Inconsolata:400,700';
+@import'https://fonts.googleapis.com/css?family=Inconsolata:400,700';
 
 *{
   box-sizing: border-box;
@@ -82,7 +82,7 @@ h2, .h2, h3, .h3{
   margin: 1.6em 0 1em 0;
   font-size: 1.231em;
   font-weight: bold;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
