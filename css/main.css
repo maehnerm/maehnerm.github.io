@@ -68,8 +68,10 @@ textarea {
 
 /* ===Base=== */
 
-h1{
+h1, .h1{
   font-size: 9vw;
+  font-weight: bold;
+  display: inline;
   margin: 0;
   color: #000;
   margin-left: -3px;
@@ -263,7 +265,7 @@ a.call:hover {
  .container{
    /*margin-top: calc(50vh - 300px);*/
  }
- h1{
+ h1, .h1{
    font-size: 69px;
  }
 
