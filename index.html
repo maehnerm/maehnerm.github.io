@@ -17,8 +17,8 @@
     <header class="container intro">
       <div class="vcenter">
         <div class="header-content">
-            <h1>marcus mähner <span class="blink">|<span></h1>
-            <p class="byline" >Hi, my name is Marcus Mähner and I'm a freelance web developer based in Berlin.</p>
+            <h1 itemprop="logo">marcus mähner <span class="blink">|<span></h1>
+            <p class="byline" itemscope itemtype="http://schema.org/Person" >Hi, my name is <span itemprop="name">Marcus Mähner</span> and I'm a freelance <span itemprop="description">web developer</span> based in Berlin.</p>
         </div>
       </div>
     </header>
@@ -26,26 +26,28 @@
       <a rel="nofollow" href="#service" class="call-to-action"><div class="arrow-down"></div> </a>
     </div>
     <main class="content">
-      <section id="service" class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <div class=inner-card>
-              <h2>Responsive design</h2>
-              <p>I'm using a <a rel="nofollow" target="_blank" href="http://www.lukew.com/ff/entry.asp?933">mobile first approach</a>, which means mobile optimized performance through
+      <section id="service" class="container" itemscope itemtype="http://schema.org/Service">
+        <meta itemprop="serviceType" content="Web development" />
+        <meta itemprop="provider" content="Marcus Mähner | Web development" />
+        <div  class="row" itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+          <div class="col-sm-4" itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+            <div class="inner-card" itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
+              <h2 itemprop="name">Responsive design</h2>
+              <p itemprop="description">I'm using a <a rel="nofollow" target="_blank" href="http://www.lukew.com/ff/entry.asp?933">mobile first approach</a>, which means mobile optimized performance through
                 full responsive layouts, <a rel="nofollow" target="_blank" href="http://responsiveimages.org/">responsive images</a> and other best practices in terms of usability.
               </p>
               </div>
           </div>
-          <div class="col-sm-4">
-            <div class=inner-card>
-              <h2>CMS Development</h2>
-              <p>With professional experience in open source systems like <a rel="nofollow" target="_blank" href="https://www.drupal.org/8">Drupal 8</a>, <a rel="nofollow" target="_blank" href="https://wordpress.org/">WordPress</a> and <a rel="nofollow" target="_blank" href="http://cakephp.org/">CakePHP</a>, I create highly maintainable web solutions for blogs and ecommerce sites.</p>
+          <div class="col-sm-4" itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+            <div class="inner-card" itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
+              <h2 itemprop="name">CMS Development</h2>
+              <p itemprop="description">With professional experience in open source systems like <a rel="nofollow" target="_blank" href="https://www.drupal.org/8">Drupal 8</a>, <a rel="nofollow" target="_blank" href="https://wordpress.org/">WordPress</a> and <a rel="nofollow" target="_blank" href="http://cakephp.org/">CakePHP</a>, I create highly maintainable web solutions for blogs and ecommerce sites.</p>
             </div>
           </div>
-          <div class="col-sm-4">
-            <div class=inner-card>
-              <h2>SEO Consulting</h2>
-              <p>In the past years I collected some first-hand experience of what makes a site rank higher in search results. I work with powerful SEO-tools like <a rel="nofollow" target="_blank" href="https://analytics.google.com/">Analytics</a> and <a rel="nofollow" target="_blank" href="https://www.google.com/webmasters/tools/">Search Console</a>.</p>
+          <div class="col-sm-4" itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+            <div class="inner-card" itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
+              <h2 itemprop="name">SEO Consulting</h2>
+              <p itemprop="description">In the past years I collected some first-hand experience of what makes a site rank higher in search results. I work with powerful SEO-tools like <a rel="nofollow" target="_blank" href="https://analytics.google.com/">Analytics</a> and <a rel="nofollow" target="_blank" href="https://www.google.com/webmasters/tools/">Search Console</a>.</p>
             </div>
           </div>
         </div>
@@ -100,12 +102,12 @@
         <hr>
       </section> -->
       <section id="contact">
-        <div class="container">
+        <div class="container" itemscope itemtype="http://schema.org/Person">
           <h2>Get in touch</h2>
-          <p><a class="mail" href="javascript:antiSpamMail.linkDecrypt('nbjmup;ifzAnbsdvtnbfiofs/dpn');">
+          <p><a itemprop="email" content="hey@marcusmaehner.com" class="mail" href="javascript:antiSpamMail.linkDecrypt('nbjmup;ifzAnbsdvtnbfiofs/dpn');">
             hey<span class="crypt" aria-hidden="true">.</span>@<span class="crypt" aria-hidden="true">.</span>marcusmaehner<span class="crypt" aria-hidden="true">.</span>.<span class="crypt" aria-hidden="true">.</span>com
           </a></p>
-          <p><a class="call" href="tel:+4917678419837">+49 176 78 41 98 37</a></p>
+          <p><a itemprop="telephone" class="call" href="tel:+4917678419837">+49 176 78 41 98 37</a></p>
         </div>
       </section>
     </main>

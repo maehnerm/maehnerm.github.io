@@ -34,17 +34,23 @@
       <main class="container">
         <h1>Imprint</h1>
         <h2>ACCORDING TO § 5 TMG:</h2>
-        <p>Marcus Mähner<br>
-        Marcus Mähner | Web development<br>
-        Wipperstr. 9<br>
-        12055 Berlin
-        </p>
-        <h2>Contact:</h2>
-        <p>Phone: +49 176 78 41 98 37<br>
-          Email: hey@marcusmaehner.com</p>
-        <h2>Umsatzsteuer-ID:</h2>
-        <p>Sales tax identification number according to §27a Value Added Tax Act:<br />
-        DE305687798</p>
+        <div itemscope itemtype="http://schema.org/Person">
+          <p><span itemprop="name">Marcus Mähner</span><br>
+          <span itemprop="brand">Marcus Mähner | Web development</span><br>
+          <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">Wipperstr. 9</span><br>
+            <span itemprop="postalCode">12055</span> <span itemprop="addressLocality">Berlin</span>
+          </div>
+          </p>
+          <h2>Contact:</h2>
+          <p>Email: <a itemprop="email" content="hey@marcusmaehner.com" class="mail" href="javascript:antiSpamMail.linkDecrypt('nbjmup;ifzAnbsdvtnbfiofs/dpn');">
+            hey<span class="crypt" aria-hidden="true">.</span>@<span class="crypt" aria-hidden="true">.</span>marcusmaehner<span class="crypt" aria-hidden="true">.</span>.<span class="crypt" aria-hidden="true">.</span>com
+          </a></p>
+          <p>Phone: <a itemprop="telephone" class="call" href="tel:+4917678419837">+49 176 78 41 98 37</a></p>
+          <h2>Umsatzsteuer-ID:</h2>
+          <p>Sales tax identification number according to §27a Value Added Tax Act:<br />
+          <span itemprop="vatID">DE305687798</span></p>
+        </div>
         <br>
         <p><a href="/">< Back to homepage</a></p>
       </main>
