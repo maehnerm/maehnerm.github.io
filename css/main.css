@@ -112,7 +112,6 @@ ul li:last-child:after{
 }*/
 
 footer{
-  position: absolute;
   bottom: 0;
   width:100%;
   margin-right: 3em;
@@ -166,7 +165,7 @@ small{
   position: absolute;
   left: auto;
   right: auto;
-  bottom: 5.6em;
+  bottom: 1.8em;
 }
 
 a.call-to-action{
