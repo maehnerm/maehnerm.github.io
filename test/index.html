@@ -62,6 +62,12 @@
       ga('create', 'UA-82461635-1', 'auto');
       ga('send', 'pageview');
 
+      if (grecaptcha.getResponse() == ""){
+          alert("You can't proceed!");
+      } else {
+          alert("Thank you");
+      }
+
     </script>
   </body>
 </html>
