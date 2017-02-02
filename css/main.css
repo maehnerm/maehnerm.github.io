@@ -1,5 +1,7 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 @import'https://fonts.googleapis.com/css?family=Inconsolata:400,700';
+@import'../fonts/icons/css/fontello.css';
+
 
 *{
   box-sizing: border-box;
@@ -149,6 +151,20 @@ small{
   display: relative;
 }
 
+.row-is-flex{
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.row-is-flex > *{
+  float: none;
+}
+
+.has-space-between{
+  justify-content: space-between;
+}
 
 /* ===Module=== */
 
@@ -222,6 +238,40 @@ a.call-to-action .arrow-down{
   content: " — ";
 }
 
+.social-buttons{
+  margin: -0.15em;
+}
+
+.social-button{
+  display: inline-block;
+  margin-right: 0.6em;
+  width: 3.1em;
+  height: 3.1em;
+  padding: 0.15em;
+  border-color: #555;
+  color: #555;
+  -webkit-transition: border-color 0.5s ease, color 0.5s ease;
+  -moz-transition: border-color 0.5s ease, color 0.5s ease;
+  -o-transition: border-color 0.5s ease, color 0.5s ease;
+  -ms-transition: border-color 0.5s ease, color 0.5s ease;
+  transition: border-color 0.5s ease, color 0.5s ease;
+}
+
+.social-button .circle{
+  width: 2.8em;
+  height: 2.8em;
+  padding: 0.4em 0 0 0.3em;
+}
+
+.social-button:hover{
+  border-color: #888;
+  color: #888;
+}
+
+.social-button-icon{
+  font-size: 1.5em;
+}
+
 /* ===State=== */
 .blink {
   opacity: 1;
@@ -238,6 +288,11 @@ a.mail:hover{
 
 a.call:hover {
   cursor: url(../call.png), auto;
+}
+
+.circle{
+  border-radius: 50%;
+  border: 1px solid;
 }
 
 /* ===Theme=== */
