@@ -6,8 +6,8 @@
 }
 
 html, body{
-  color: #333;
-  background: #eae9e5;
+  color: #444;
+  background: #f9f9f9;
   line-height: 1.4;
   font-family: "Courier New", Courier, monospace;
 }
@@ -71,13 +71,16 @@ textarea {
 h1, .h1{
   font-size: 9vw;
   font-weight: bold;
-  display: inline;
+  text-align: center;
   margin: 0;
-  color: #000;
   margin-left: -3px;
   letter-spacing: 0.02em;
   line-height: 1em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.byline{
+  text-align: center;
 }
 
 h2, .h2, h3, .h3{
@@ -223,7 +226,8 @@ a.call-to-action .arrow-down{
 }
 
 /* ===State=== */
-.blink {
+h1:after {
+  content: "|";
   opacity: 1;
   animation: blink 0.8s infinite;
 }
