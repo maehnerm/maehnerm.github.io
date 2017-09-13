@@ -226,7 +226,7 @@ a.call-to-action .arrow-down{
 }
 
 /* ===State=== */
-h1:after {
+.blink:after {
   content: "|";
   opacity: 1;
   animation: blink 0.8s infinite;
