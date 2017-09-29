@@ -85,11 +85,17 @@ h1, .h1{
 
 h2, .h2, h3, .h3{
   margin: 1.6em 0 1em 0;
-  font-size: 1.231em;
   font-weight: bold;
   font-family: "Inconsolata", Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+h2, .h2{
+	font-size: 1.5em;
+}
+
+h3, .h3{
+	font-size: 1.2em;
 }
 
 p{
@@ -154,12 +160,49 @@ small{
 
 
 /* ===Module=== */
-
-.inner-card h2{
-  border-bottom: 1px solid #333;
-  padding-bottom: 0.2em;
+.card{
+	padding-bottom: 30px;
+}
+.card__img{
+	position: relative;
+}
+.card__header{
+	position: relative;
+}
+.card h3,
+.card .h3{
+	margin-top: 1rem;
+  margin-bottom: 0.2rem;
+	display: inline-block;
+}
+.card__link{
+	font-size: 1.231em;
+	line-height: 1.4em;
+	margin-top: 1rem;
+  margin-bottom: 0.2rem;
+	position: absolute;
+	right: 0;
+}
+.card hr{
+	margin: 0;
+	margin-bottom: 1rem;
+	border-top: 1px solid #444;
 }
 
+@media (min-width:768px) {
+	.col-md-6 .card{
+		height: 337px;
+	}
+	.col-md-6 .card__img{
+		overflow: hidden;
+  	max-height: 216px;
+	}
+}
+
+.inner-card h2{
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.2em;
+}
 
 .button-wrapper{
   width: 100%;
@@ -334,7 +377,11 @@ a.call:hover {
 }
 
 hr.distancer{
-  marging: 0;
+  margin: 0;
+}
+
+hr.reduced-mt{
+	margin-top: 2.2em;
 }
 
 /* ==========================================================================
