@@ -198,6 +198,7 @@ small{
 @media (min-width:768px) {
 	.card__header a i.link-icon{
 		opacity: 0;
+		-webkit-transition: opacity 0.3s ease;
 		transition: opacity 0.3s ease;
 	}
 	.card__header a:hover i.link-icon{
