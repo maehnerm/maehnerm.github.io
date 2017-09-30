@@ -178,13 +178,21 @@ small{
   margin-bottom: 0.2rem;
 	display: inline-block;
 }
-.card__link{
-	font-size: 1.231em;
-	line-height: 1.4em;
-	margin-top: 1rem;
-  margin-bottom: 0.2rem;
-	position: absolute;
-	right: 0;
+.card__header h3 a,
+.card__header h3 a:hover,
+.card__header h3 a:focus,
+.card__header h3 a:visited,
+.card__header h3 a:active{
+	color: #444;
+	text-decoration: none;
+}
+.card__header a i.link-icon{
+	font-size: 1.2rem;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+.card__header a:hover i.link-icon{
+	opacity: 1;
 }
 .card hr{
 	margin: 0;
